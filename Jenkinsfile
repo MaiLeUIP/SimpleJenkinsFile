@@ -4,7 +4,7 @@ pipeline {
     stages{
         stage('Prepairing'){
             steps {
-                echo "Pulling... ${env.BRANCHNAME}"
+                echo "Pulling... ${env.BRANCH_NAME}"
                 checkout scm
             }
         }
